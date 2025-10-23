@@ -26,9 +26,16 @@ above:
     mov edx, len_above
 
 print:
+<<<<<<< HEAD
     mov eax,4         ; sys_write
     mov ebx,1         ; file descriptor (stdout)
     int 0x80
+=======
+    mov eax,4  ; display
+    mov ebx,1  ; how to display stdout
+    mov edx,30 ; len of what to display
+    int 0x80   ; call
+>>>>>>> 5eb83839c1b69bed0aec983e9e44b226f272903a
 
     mov eax,1         ; sys_exit
     xor ebx,ebx
