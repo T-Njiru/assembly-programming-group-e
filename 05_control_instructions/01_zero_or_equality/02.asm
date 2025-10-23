@@ -1,7 +1,7 @@
 ; jne_jnz.asm
 section .data
-    msg_equal db "AX == BX (Equal, ZF=1)",10,0
-    msg_not_equal db "AX != BX (Not Equal, ZF=0)",10,0
+    msg_equal db "AX == BX (Equal, ZF=1)Ted Njiru 166388",10,0
+    msg_not_equal db "AX != BX (Not Equal, ZF=0)Ted Njiru 166388",10,0
 
 section .text
     global _start
@@ -20,7 +20,7 @@ not_equal:
 print:
     mov eax,4
     mov ebx,1
-    mov edx,30
+    mov edx,100
     int 0x80
 
     mov eax,1
